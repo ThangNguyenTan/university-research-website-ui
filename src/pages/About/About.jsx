@@ -24,29 +24,31 @@ function About() {
                 <h1>About UniR&D</h1>
 
                 <p>
-                  Opened in 2004 as specialized medical institution consisted of five centers, such
-                  as cancer center and joint center, Chonnam National University Hwasun Hospital has
-                  become one of the world’s best cancer specialty hospital in recognition of being
-                  selected as “World’s Best Hospitals-Oncology” by Newsweek for two consecutive
-                  years.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet.
+                  Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Turpis
+                  tincidunt id aliquet risus feugiat in ante metus dictum.
                 </p>
                 <p>
-                  We believe this achievement is the result of sweat and devotions of previous
-                  general directors and all hospital members. With the core value of
-                  ‘state-of-the-art, patient-oriented, and world centered hospital surrounded by
-                  nature’, the hospital is renowned as the best beautiful hospital in Korea and has
-                  been leading the advancement of medicine in the nation as the world-centered
-                  hospital performing best practices with the world-class medical professionals and
-                  cutting-edge medical equipments. As a patient-centered hospital, CNUHH is
-                  concentrating all its competences on patient safety, healing, and quality
-                  improvement. We are striving to become a “Happy Hospital” for all the visitors and
-                  hospital staffs.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                  incididunt ut labore et dolore magna aliqua. Sed felis eget velit aliquet.
+                  Vulputate eu scelerisque felis imperdiet proin fermentum leo vel orci. Turpis
+                  tincidunt id aliquet risus feugiat in ante metus dictum. A arcu cursus vitae
+                  congue mauris rhoncus aenean vel elit. Mattis enim ut tellus elementum sagittis
+                  vitae et. Urna nunc id cursus metus aliquam eleifend mi. Eleifend mi in nulla
+                  posuere. Vestibulum sed arcu non odio. Ultricies mi eget mauris pharetra. Sit amet
+                  aliquam id diam maecenas ultricies mi eget. Gravida neque convallis a cras semper
+                  auctor neque vitae. Netus et malesuada fames ac turpis egestas maecenas pharetra
+                  convallis. Tristique risus nec feugiat in fermentum.
                 </p>
                 <p>
-                  In addition, our hospital will be committed to develop the nation’s biomedical
-                  industry and conquer cancer as a pivotal role of Hwasun Biomedical Cluster. We
-                  will continue our efforts to come closer to patients and customers and provide
-                  patient-centered and state-of-the-art medical care.
+                  Sit amet nisl purus in mollis nunc sed id semper. Faucibus a pellentesque sit amet
+                  porttitor eget dolor morbi non. Tellus integer feugiat scelerisque varius morbi
+                  enim nunc. Platea dictumst quisque sagittis purus. Mauris cursus mattis molestie a
+                  iaculis at. Vehicula ipsum a arcu cursus vitae congue mauris. Turpis cursus in hac
+                  habitasse platea dictumst quisque. Urna cursus eget nunc scelerisque viverra.
+                  Maecenas sed enim ut sem viverra aliquet eget sit. Sed nisi lacus sed viverra
+                  tellus in. Id donec ultrices tincidunt arcu non sodales neque sodales ut.
                 </p>
               </Col>
             </Row>

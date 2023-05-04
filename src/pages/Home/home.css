@@ -20,13 +20,13 @@
 
 #home-header .header_header-content {
   position: absolute;
-  left: 78%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   z-index: 5;
-  text-align: right;
-  width: 42%;
+  text-align: center;
+  width: 50%;
   max-width: 1680px;
 }
 
@@ -58,7 +58,6 @@
     top: 25%;
     left: 50%;
     width: 100%;
-    text-align: center;
   }
 
   #home-header .header_header-content h1 {

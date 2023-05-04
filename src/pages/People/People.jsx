@@ -73,7 +73,7 @@ function People() {
   return (
     <>
       <HelmetMeta
-        title="People"
+        title="Team"
         description="You can view the information of all members of the team who have joined us to build marvelous things"
       />
       <div id="people-page">
@@ -82,7 +82,7 @@ function People() {
           <Container>
             <Row>
               <Col lg="12" xl="10">
-                <h1>People</h1>
+                <h1>Our Team</h1>
               </Col>
 
               {handleDisplayMain()}

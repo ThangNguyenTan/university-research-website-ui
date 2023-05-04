@@ -16,7 +16,7 @@ export const NAV_LINKS = {
     path: '/publications',
   },
   PEOPLE: {
-    text: 'people',
+    text: 'team',
     path: '/people',
   },
   JOIN_US: {
