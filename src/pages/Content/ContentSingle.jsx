@@ -8,7 +8,7 @@ import parse from 'html-react-parser';
 import { getPublication } from '../../apis';
 
 // Components
-import { Navigator, Footer, HelmetMeta } from '../../components';
+import { Navigator, Footer, HelmetMeta, Person } from '../../components';
 
 function ContentSingle() {
   const { title: selectedTitle } = useParams();
@@ -38,36 +38,53 @@ function ContentSingle() {
       return <h2>Loading...</h2>;
     }
 
-    const { title, content, contentImagePath, hyperlink, type } = article;
+    const { title, content, contentImagePath, hyperlink, type, participants } = article;
     const colWidth = type === 'news' ? '6' : '12';
     const mainColWidth = type === 'news' ? '9' : '7';
 
     return (
       <>
         <HelmetMeta title={title} description={content} />
-        <Col lg="12" xl={mainColWidth}>
-          <div className="article-single">
-            <h1 className="article-single__title">{title}</h1>
+        <Row>
+          <Col lg="12" xl={mainColWidth}>
+            <div className="article-single">
+              <h1 className="article-single__title">{title}</h1>
+              <Row>
+                <Col lg={colWidth} className="article-single__image text-center mb-4">
+                  <img className="img-fluid" src={`${contentImagePath}`} alt={title} />
+                </Col>
+                <Col lg={colWidth} className="article-single__content">
+                  <p className="pre-wrap">{parse(content)}</p>
+                  <a
+                    className="btn btn-outline-dark large"
+                    type="button"
+                    href={hyperlink}
+                    target="_blank"
+                    rel="noreferrer"
+                    alt={title}
+                  >
+                    LEARN MORE
+                  </a>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+          <hr style={{ marginTop: '2rem', marginBottom: '2rem' }} />
+          <Col lg="12" xl="9">
+            <h3 style={{ marginBottom: '2rem' }}>Participants</h3>
             <Row>
-              <Col lg={colWidth} className="article-single__image text-center mb-4">
-                <img className="img-fluid" src={`${contentImagePath}`} alt={title} />
-              </Col>
-              <Col lg={colWidth} className="article-single__content">
-                <p className="pre-wrap">{parse(content)}</p>
-                <a
-                  className="btn btn-outline-dark large"
-                  type="button"
-                  href={hyperlink}
-                  target="_blank"
-                  rel="noreferrer"
-                  alt={title}
-                >
-                  LEARN MORE
-                </a>
-              </Col>
+              {participants.map((person) => (
+                <Col md="6" lg="4" xl="3" key={_.get(person, 'name', '')}>
+                  <Person
+                    name={_.get(person, 'name', '')}
+                    title={_.get(person, 'job.name', '')}
+                    image={_.get(person, 'coverImagePath', '')}
+                  />
+                </Col>
+              ))}
             </Row>
-          </div>
-        </Col>
+          </Col>
+        </Row>
       </>
     );
   };

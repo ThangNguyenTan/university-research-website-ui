@@ -8,7 +8,13 @@ import moment from 'moment';
 import { fetchPublications, deletePublication } from '../../../apis';
 
 // Components
-import { Navigator, Footer, Paginator, ConfirmationBox } from '../../../components';
+import {
+  Navigator,
+  Footer,
+  Paginator,
+  ConfirmationBox,
+  AssignPeopleToArticle,
+} from '../../../components';
 
 import './manage-articles.css';
 import { createToast } from '../../../utils';
@@ -16,7 +22,9 @@ import { createToast } from '../../../utils';
 function ArticlesList() {
   const [currentPage, setCurrentPage] = useState(1);
   const [isDeletePopupShow, setDeletePopupShow] = useState(false);
+  const [isAssignParticipantPopupShow, setAssignParticipantPopupShow] = useState(false);
   const [deletedArticleTitle, setDeletedArticleTitle] = useState(null);
+  const [assignedArticleTitle, setAssignedArticleTitle] = useState(null);
 
   // Queries
   const { isLoading, isError, data, error, refetch } = useQuery({
@@ -86,6 +94,17 @@ function ArticlesList() {
                         Delete
                       </Button>
                     </ButtonGroup>
+                    <ButtonGroup className="me-2" aria-label="Second group">
+                      <Button
+                        variant="primary"
+                        onClick={() => {
+                          setAssignedArticleTitle(title);
+                          setAssignParticipantPopupShow(true);
+                        }}
+                      >
+                        Assign
+                      </Button>
+                    </ButtonGroup>
                   </ButtonToolbar>
                 </td>
               </tr>
@@ -131,6 +150,16 @@ function ArticlesList() {
               description="Are you sure, you want to delete the article? Once deleted it's gone forever."
               onConfirm={onDeleteConfirmed}
             />
+            {isAssignParticipantPopupShow && (
+              <AssignPeopleToArticle
+                show={isAssignParticipantPopupShow}
+                setShow={setAssignParticipantPopupShow}
+                afterEffect={() => {
+                  refetch();
+                }}
+                selectedPublicationName={assignedArticleTitle}
+              />
+            )}
             <Row>
               <Col lg="12" xl="12">
                 <h1 className="page-title">Manage Articles</h1>

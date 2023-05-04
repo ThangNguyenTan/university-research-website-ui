@@ -101,3 +101,23 @@ export const deletePublication = async (title) => {
 
   return deletePublicationResponseData;
 };
+
+export const assignPeopleToPublication = async (selectedTitle, { participant }) => {
+  const updatePublicationResponse = await axios.patch(
+    `/api/publication/${selectedTitle}/participants/${participant}`,
+    generateAuthHeader()
+  );
+  const updatePublicationResponseData = _.get(updatePublicationResponse, 'data', null);
+  return updatePublicationResponseData;
+};
+
+export const removePeopleFromPublication = async (selectedTitle, { participant }) => {
+  const removePublicationResponse = await axios.delete(
+    `/api/publication/${selectedTitle}/participants/${participant}`,
+    {
+      headers: { ..._.get(generateAuthHeader(), 'headers', {}) },
+    }
+  );
+  const removePublicationResponseData = _.get(removePublicationResponse, 'data', null);
+  return removePublicationResponseData;
+};

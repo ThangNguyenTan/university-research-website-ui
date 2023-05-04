@@ -8,7 +8,7 @@ import parse from 'html-react-parser';
 import { getPeople } from '../../apis';
 
 // Components
-import { Navigator, Footer, HelmetMeta } from '../../components';
+import { Navigator, Footer, HelmetMeta, Article } from '../../components';
 
 function PeopleSingle() {
   const { name: selectedName } = useParams();
@@ -45,35 +45,54 @@ function PeopleSingle() {
       job: { name: jobName },
       coverImagePath,
       description,
+      researchHighlights,
     } = person;
 
     return (
       <>
         <HelmetMeta title={name} description={description} />
-        <Col xl="12">
-          <div className="person-single">
-            <h1 className="person-single__name page-title">{name}</h1>
-            <h4
-              style={{
-                marginBottom: '2em',
-                marginTop: '-35px',
-              }}
-            >
-              {roleName} - {jobName}
-            </h4>
+        <Row>
+          <Col xl="12">
+            <div className="person-single">
+              <h1 className="person-single__name page-title">{name}</h1>
+              <h4
+                style={{
+                  marginBottom: '2em',
+                  marginTop: '-35px',
+                }}
+              >
+                {roleName} - {jobName}
+              </h4>
+              <Row>
+                <Col md="8" xl="3" className="person-single__image text-center mb-4">
+                  <img className="img-fluid" src={`${coverImagePath}`} alt={name} />
+                </Col>
+                <Col md="12" xl="7" className="person-single__content">
+                  <p className="pre-wrap">{parse(description)}</p>
+                  <p>
+                    <b>Email:</b> {email}
+                  </p>
+                </Col>
+              </Row>
+            </div>
+          </Col>
+          <hr style={{ marginTop: '2rem', marginBottom: '2rem' }} />
+          <Col lg="12">
+            <h3 style={{ marginBottom: '2rem' }}>Research Highlights</h3>
             <Row>
-              <Col md="8" xl="3" className="person-single__image text-center mb-4">
-                <img className="img-fluid" src={`${coverImagePath}`} alt={name} />
-              </Col>
-              <Col md="12" xl="7" className="person-single__content">
-                <p className="pre-wrap">{parse(description)}</p>
-                <p>
-                  <b>Email:</b> {email}
-                </p>
-              </Col>
+              {researchHighlights.map((research) => (
+                <Col md="6" lg="4" xl="3" key={_.get(research, 'title', '')}>
+                  <Article
+                    title={_.get(research, 'title', '')}
+                    description={_.get(research, 'description', '')}
+                    thumbnail={_.get(research, 'coverImagePath', '')}
+                    createdYear={_.get(research, 'publish', '')}
+                  />
+                </Col>
+              ))}
             </Row>
-          </div>
-        </Col>
+          </Col>
+        </Row>
       </>
     );
   };

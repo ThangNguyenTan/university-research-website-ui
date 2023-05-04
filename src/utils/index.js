@@ -31,7 +31,7 @@ export const generateAuthHeader = () => {
 
   return {
     headers: {
-      Authorization: `Bearer ${token}`,
+      'X-Access-Token': `Bearer ${token}`,
     },
   };
 };

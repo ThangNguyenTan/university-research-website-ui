@@ -10,4 +10,5 @@ export { default as ConfirmationBox } from './Modal/ConfirmationBox/Confirmation
 export { default as CreateJobModal } from './Modal/Jobs/CreateJobModal';
 export { default as UpdateJobModal } from './Modal/Jobs/UpdateJobModal';
 export { default as CreateRoleModal } from './Modal/Roles/CreateRoleModal';
+export { default as AssignPeopleToArticle } from './Modal/Assign/AssignPeopleToArticle';
 export { default as HelmetMeta } from './Meta/HelmetMeta';
