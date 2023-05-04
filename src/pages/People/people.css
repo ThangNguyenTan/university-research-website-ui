@@ -1,0 +1,30 @@
+#people-page h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+#people-page .people-page__role-division {
+  margin-bottom: 5rem;
+}
+
+#people-page .people-page__role-division:last-child {
+  margin-bottom: 0;
+}
+
+#people-page .people-page__role-division h2 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+#people-page .article.people .article_thumbnail {
+  height: 14rem;
+  margin-bottom: 10px;
+}
+
+#people-page .article.people .article_title {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}

@@ -1,0 +1,12 @@
+#about-main h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#about-main p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}

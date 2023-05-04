@@ -1,0 +1,26 @@
+#join-us-page h4 {
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
+
+#join-us-page .join-us-page__header {
+  margin-bottom: 3rem;
+}
+
+#join-us-page .join-us-page__header h1 {
+  font-weight: 300;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+#join-us-page .join-us-page__content p {
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#join-us-page .join-us-page__content > *:last-child {
+  margin-bottom: 0;
+}

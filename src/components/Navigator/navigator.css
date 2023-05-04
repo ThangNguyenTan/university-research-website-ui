@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #12944b !important;
+}
+
+.navbar .nav-link {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-brand img {
+  margin-right: 10px;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: none;
+  }
+}

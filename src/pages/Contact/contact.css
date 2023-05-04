@@ -1,0 +1,23 @@
+#contact-main {
+  margin-top: 4rem;
+}
+
+#contact-page .contact-page__content h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+#contact-page .contact-page__content ul {
+  margin-bottom: 3rem;
+}
+
+#contact-page .contact-page__content ul li {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#contact-page .contact-page__content ul li:first-child {
+  font-weight: bold;
+}

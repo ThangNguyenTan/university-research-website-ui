@@ -1,0 +1,13 @@
+footer {
+  background: #f9fcff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin-top: 5rem;
+  border-top: 1px solid #12944b;
+}
+
+footer .footer_content {
+  color: #777;
+  padding-top: 1rem;
+}

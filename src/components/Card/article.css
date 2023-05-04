@@ -1,0 +1,57 @@
+.article {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.article a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.article > * {
+  transition: color 0.2s ease-in;
+}
+
+.article:hover > * {
+  color: #12944b;
+}
+
+.article:hover .article_meta ul {
+  color: #12944b;
+}
+
+.article:hover .article_thumbnail {
+  opacity: 0.7;
+}
+
+.article .article_thumbnail {
+  height: 12rem;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.2s ease-in;
+}
+
+.article .article_meta ul {
+  display: flex;
+  align-items: center;
+  color: #7b7b7b;
+  transition: color 0.2s ease-in;
+  margin-top: 1rem;
+}
+
+.article .article_meta ul li:nth-child(even) {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.article .article_title {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.article .article_title h4 {
+  font-weight: 400;
+}
