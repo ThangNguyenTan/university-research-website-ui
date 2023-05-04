@@ -53,7 +53,7 @@ function Navigator({ isAdminPage }) {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="light" variant="light" expand="lg">
         <Container>
           <Link className="navbar-brand" to="/">
             <img
@@ -63,7 +63,7 @@ function Navigator({ isAdminPage }) {
               height="30"
               className="d-inline-block align-top"
             />{' '}
-            LabMI
+            UniR&D
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setSideNavActive(true)} />
           <Nav className="ml-auto">{renderNavLinks()}</Nav>

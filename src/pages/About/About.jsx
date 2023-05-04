@@ -12,7 +12,7 @@ function About() {
     <>
       <HelmetMeta
         title="About"
-        description={`LabMI's mission is to accelerate the application of artificial intelligence (AI)
+        description={`UniR&D's mission is to accelerate the application of artificial intelligence (AI)
                   algorithms in medical sciences and clinical practice.`}
       />
       <div id="about-page">
@@ -21,7 +21,7 @@ function About() {
           <Container>
             <Row>
               <Col xs="12" lg="8">
-                <h1>About LabMI</h1>
+                <h1>About UniR&D</h1>
 
                 <p>
                   Opened in 2004 as specialized medical institution consisted of five centers, such

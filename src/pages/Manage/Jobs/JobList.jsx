@@ -139,7 +139,7 @@ function JobList() {
   return (
     <>
       <Helmet>
-        <title>Manage Job - LabMI - Harvard</title>
+        <title>Manage Job - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div id="manage-job-page">

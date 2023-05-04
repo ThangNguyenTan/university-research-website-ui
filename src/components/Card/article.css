@@ -13,11 +13,11 @@
 }
 
 .article:hover > * {
-  color: #12944b;
+  color: #01033c;
 }
 
 .article:hover .article_meta ul {
-  color: #12944b;
+  color: #01033c;
 }
 
 .article:hover .article_thumbnail {

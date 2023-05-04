@@ -343,7 +343,7 @@ function PeopleUpdate() {
   return (
     <>
       <Helmet>
-        <title>Update People - LabMI - Harvard</title>
+        <title>Update People - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <CreateJobModal

@@ -120,7 +120,7 @@ function PeopleList() {
   return (
     <>
       <Helmet>
-        <title>Manage People - LabMI - Harvard</title>
+        <title>Manage People - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div id="manage-people-page">

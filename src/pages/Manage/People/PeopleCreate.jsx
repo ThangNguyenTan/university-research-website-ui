@@ -61,7 +61,7 @@ function PeopleCreate() {
   return (
     <>
       <Helmet>
-        <title>Create People - LabMI - Harvard</title>
+        <title>Create People - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <CreateJobModal

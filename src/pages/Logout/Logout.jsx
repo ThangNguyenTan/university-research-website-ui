@@ -16,7 +16,7 @@ function Logout() {
   return (
     <>
       <Helmet>
-        <title>Logout - LabMI - Harvard</title>
+        <title>Logout - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
     </>

@@ -62,7 +62,7 @@ function ArticlesCreate() {
   return (
     <>
       <Helmet>
-        <title>Create Article - LabMI - Harvard</title>
+        <title>Create Article - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div id="manage-articles-page">

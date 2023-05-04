@@ -117,7 +117,7 @@ function ArticlesList() {
   return (
     <>
       <Helmet>
-        <title>Manage Articles - LabMI - Harvard</title>
+        <title>Manage Articles - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div id="manage-articles-page">

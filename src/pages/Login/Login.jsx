@@ -55,7 +55,7 @@ function Login() {
   return (
     <>
       <Helmet>
-        <title>Login - LabMI - Harvard</title>
+        <title>Login - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div id="login-page">

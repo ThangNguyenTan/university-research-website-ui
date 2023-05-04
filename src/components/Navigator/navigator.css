@@ -1,10 +1,11 @@
 .navbar {
-  background-color: #12944b !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #01033c;
 }
 
 .navbar .nav-link {
   text-transform: uppercase;
-  color: #fff;
+  color: #01033c;
   font-weight: 500;
 }
 
@@ -12,6 +13,8 @@
   font-size: 1.7rem;
   display: flex;
   align-items: center;
+  color: #01033c;
+  font-weight: bold;
 }
 
 .navbar .navbar-brand img {

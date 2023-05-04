@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
 
 function HelmetMeta({ title, description }) {
-  const finalTitle = `${title} - LabMI`;
+  const finalTitle = `${title} - UniR&D`;
   return (
     <Helmet>
       <title>{finalTitle}</title>

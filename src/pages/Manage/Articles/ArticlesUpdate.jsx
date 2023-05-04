@@ -320,7 +320,7 @@ function ArticlesUpdate() {
   return (
     <>
       <Helmet>
-        <title>Update Article - LabMI - Harvard</title>
+        <title>Update Article - UniR&D - Harvard</title>
         <meta name="robots" content="noindex" />
       </Helmet>
       <div id="manage-articles-page">

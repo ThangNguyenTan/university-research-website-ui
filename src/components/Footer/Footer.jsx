@@ -10,7 +10,7 @@ function Footer() {
     <footer>
       <Container>
         <div className="footer_content">
-          <h5>LabMI © {currentYear}</h5>
+          <h5>UniR&D © {currentYear}</h5>
         </div>
       </Container>
     </footer>
