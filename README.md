@@ -4,6 +4,10 @@
 
 The website is developed with the purpose of managing, showing and promoting some of the most notable research from a university
 
+## Demo
+
+Visit Website: https://university-research-website-ui.vercel.app/
+
 ## Technoligies
 
 - React.js
