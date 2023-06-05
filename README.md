@@ -25,16 +25,16 @@ Visit Website: https://university-research-website-ui.vercel.app/
 
 ### Development Purpose (with Docker & Docker Compose)
 
-- Download Docker (https://nodejs.org/en/)
+- Download Docker (https://www.docker.com/products/docker-desktop/)
 - Download Docker Compose (https://docs.docker.com/desktop/install/windows-install/)
-- Go to main folder and run `docker-compose -f .\docker-compose.dev.yml build app`
-- After the script is completed we can now start the container `docker-compose -f .\docker-compose.dev.yml up app`
+- Go to main folder and run `docker compose -f .\docker-compose.dev.yml build app`
+- After the script is completed we can now start the container `docker compose -f .\docker-compose.dev.yml up app`
 - The website will be available on port 3000
 
 ### Deployment Purpose (with Docker & Docker Compose)
 
-- Download Docker (https://nodejs.org/en/)
+- Download Docker (https://www.docker.com/products/docker-desktop/)
 - Download Docker Compose (https://docs.docker.com/desktop/install/windows-install/)
-- Go to main folder and run `docker-compose build app`
-- After the script is completed we can now start the container `docker-compose up app`
+- Go to main folder and run `docker compose build app`
+- After the script is completed we can now start the container `docker compose up app`
 - The website will be hosted by nginx which is available on port 80
